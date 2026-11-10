@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files (protect microdata from git commits as required by DUA)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.tsv
+*.parquet
+*.RData
+*.rds
+*.zip
+*.tar.gz
+
+# Allow codebooks to be version-controlled if lightweight
+!data/codebooks/*.csv
+!data/codebooks/*.tsv
+!data/codebooks/*.md
+
+# Environment & credentials
+.env
+*.key
+*.pem
+credentials.json
+token.json
+terra_credentials/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
